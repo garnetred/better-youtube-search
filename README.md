@@ -14,8 +14,15 @@ You can clone the repo locally using `git clone`.
 If you navigate to `youtube.com` and initiate a search, you'll no longer  see the sections listed above for each search.
 
 ## Screenshots
+Before
 
+https://github.com/garnetred/better-youtube-search/assets/59572865/d8039674-4c6b-44f3-afc8-171083477842
+
+After
+
+https://github.com/garnetred/better-youtube-search/assets/59572865/96cbb1b6-7f00-46dc-bf87-f14da818baf4
 
 ## Future Changes
 Long term I'd like to see if it's possible to hide irrelevant search items, like videos that are popular or videos that the user has already seen but aren't related to the current search term. At first glance it doesn't look possible to do this with the CSS alone, so I would want to do more research.
+I also hope to update this browser extension to be cross-browser and work with Firefox as well. 
 
