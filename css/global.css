@@ -1,7 +1,3 @@
-li.jobs-unified-top-card__job-insight--highlight,
-div.jobs-unified-top-card__primary-description > div > span:last-child,
-li.job-card-container__footer-item > strong,
-li.job-card-container__applicant-count
-{
+ytd-shelf-renderer, ytd-reel-shelf-renderer {
   display: none !important;
 }

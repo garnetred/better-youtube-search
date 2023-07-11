@@ -3,7 +3,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (
     changeInfo.status === 'complete' &&
     tabUrl &&
-    (tabUrl.includes('linkedin.com/feed') || tabUrl.includes('linkedin.com/in'))
+    (tabUrl.includes('youtube.com/results'))
   ) {
     chrome.scripting.insertCSS({
       target: { tabId: tabId },
