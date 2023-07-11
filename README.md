@@ -1,7 +1,7 @@
 # Better Youtube Search
 
 ## Abstract
-This browser extension removes the "people also watched," "for you," "channels new to you," "previously watched," and "shorts" section from Youtube search results.
+This Chrome browser extension removes the "people also watched," "for you," "channels new to you," "previously watched," and "shorts" section from Youtube search results.
 
 ## Tech Stack
 This project uses vanilla JS, CSS, and HTML.
