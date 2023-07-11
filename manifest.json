@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Better Youtube Search",
+  "version": "0.0.1",
+  "description": "Improve Youtube search results.",
+   "permissions": ["scripting"],
+  "icons": {
+    "16": "images/hide-emoji-16.png",
+    "32": "images/hide-emoji-32.png",
+    "48": "images/hide-emoji-48.png",
+    "128": "images/hide-emoji-128.png"
+},
+"background": {
+    "service_worker": "scripts/background.js"
+},
+"web_accessible_resources": [
+  {
+    "resources": ["css/*.css"],
+    "extension_ids": [
+      "pokgcjppglddgaomdkidlbcljngaflcd"
+    ]
+    }
+  ],
+"content_scripts": [
+    {
+        "matches": [
+        "*://www.youtube.com/results"
+      ],
+      "css": ["css/global.css"]
+    }
+],
+  "host_permissions": [
+    "*://www.youtube.com/results"
+  ],
+  "action": {
+      "default_popup": "popup.html"
+  }
+
+}
