@@ -3,6 +3,9 @@
 ## Abstract
 This Chrome browser extension removes the "people also watched," "for you," "channels new to you," "previously watched," and "shorts" section from Youtube search results.
 
+## Donate 
+You can support this extension by [buying me a coffee](https://www.buymeacoffee.com/decemberthedeveloper) to help me continue to make free, user-friendly browser extensions.
+
 ## Tech Stack
 This project uses vanilla JS, CSS, and HTML.
 
