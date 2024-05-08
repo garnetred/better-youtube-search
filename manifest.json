@@ -3,7 +3,7 @@
   "name": "Better Youtube Search",
   "version": "0.0.1",
   "description": "Improve Youtube search results.",
-   "permissions": ["scripting"],
+   "permissions": ["scripting", "tabs"],
   "icons": {
     "16": "images/play-emoji-16.png",
     "32": "images/play-emoji-32.png",
@@ -11,19 +11,20 @@
     "128": "images/play-emoji-128.png"
 },
 "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "scripts/background.js",
+    "scripts": ["scripts/background.js"]
 },
 "web_accessible_resources": [
   {
     "resources": ["css/*.css"],
     "extension_ids": [
-      "dalpijdkogoelmchapbciodmalgoaoak"
+      "{5748ae93-93bb-4747-a44c-95ff65026309}"
     ]
     }
   ],
   "browser_specific_settings": {
     "gecko" : {
-      "id": "{78e901a7a0cb429cb116bfeeebd4d8e3}"
+      "id": "{5748ae93-93bb-4747-a44c-95ff65026309}"
     }
   },
 "content_scripts": [
