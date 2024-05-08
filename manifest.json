@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Better Youtube Search",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Improve Youtube search results.",
   "permissions": ["scripting", "tabs"],
   "icons": {
@@ -17,7 +17,7 @@
   "web_accessible_resources": [
     {
       "resources": ["css/*.css"],
-      "extension_ids": ["{5748ae93-93bb-4747-a44c-95ff65026309}"]
+      "matches": ["*://www.youtube.com/*"]
     }
   ],
   "browser_specific_settings": {

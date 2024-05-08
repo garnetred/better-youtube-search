@@ -1,5 +1,5 @@
 console.log("in background.js");
-browser.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   console.log(tabId, changeInfo, tab);
   const tabUrl = tab.url ?? tab.pendingUrl;
   console.log("tabURL", tabUrl);
@@ -10,7 +10,7 @@ browser.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   ) {
     console.log("in if statement");
     try {
-      await browser.scripting.insertCSS({
+      await chrome.scripting.insertCSS({
         target: { tabId: tabId },
         files: ["css/global.css"],
       });
