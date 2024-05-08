@@ -21,6 +21,9 @@
     ]
     }
   ],
+  "browser_specific_settings": {
+    "id": "{78e901a7a0cb429cb116bfeeebd4d8e3}"
+  },
 "content_scripts": [
     {
         "matches": [
