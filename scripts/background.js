@@ -1,13 +1,17 @@
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   const tabUrl = tab.url ?? tab.pendingUrl;
   if (
-    changeInfo.status === 'complete' &&
+    changeInfo.status === "complete" &&
     tabUrl &&
-    (tabUrl.includes('youtube.com/results'))
+    tabUrl.includes("youtube.com/results")
   ) {
-    chrome.scripting.insertCSS({
-      target: { tabId: tabId },
-      files: ['css/global.css'],
-    });
+    try {
+      await chrome.scripting.insertCSS({
+        target: { tabId: tabId },
+        files: ["css/global.css"],
+      });
+    } catch (err) {
+      console.error(`Could not insert css file due to ${err}`);
+    }
   }
 });
